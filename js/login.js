@@ -25,7 +25,7 @@ function handleLoginSubmit(event) {
 
 function handleToTitle(name) {
 
-	nameClass.innerText = `Hello ${name}`
+	nameClass.innerText = `${name}`
 	nameWrap.classList.remove("hidden")
 	loginInput.value = ""
 	loginForm.classList.add("hidden")

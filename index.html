@@ -4,8 +4,8 @@
     <title>Vanilla Challenge</title>
     <meta charset="UTF-8" />
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <link rel="stylesheet" type="text/css" href="./default.css">
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./css/default.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
   </head>
   <body>
     <div class="background-image">
@@ -30,15 +30,18 @@
       
       <form id="login-form" class="hidden">
         <div class="login-container">
-          <input type="text" placeholder="너의 이름은 뭐야?" required maxlength="30" class="write-name"/>
+          <input type="text" placeholder="이름을 알려주세요." required maxlength="30" class="write-name"/>
           <input type="submit" value="Login" class="login-btn" />
         </div>
       </form>
       <div class="todo-list-wrap hidden">
+        <button onclick="location.href='/list'" style="font-weight:bold; margin-left: 20px; border-radius: 5px; padding: 10px 20px; background-color: red; color:white;">한줄평 리스트</button>
         <div class="todo-list-container">
+          
           <div class="mr-20 todo-list-div">
+            
           <form id="todo-form">
-            <input class="todo-input" type="text" placeholder="write todo list" required/>
+            <input class="todo-input" type="text" placeholder="글 작성후 엔터를 눌러주세요." required/>
             <ul id="todo-list"></ul>
           </form>
           </div>

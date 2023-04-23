@@ -4,9 +4,66 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./css/list.css">
+  <title>성공 리스트</title>
+  
 </head>
 <body>
-  <p>안녕하세요</p>
+  <p style="padding: 20px; font-weight: bold; font-size: 20px;" onclick="location.href='/'">메인화면으로</p>
+  <section class="notice">
+  <div class="page-title">
+        <div class="container">
+            <h3>오늘의 한줄평</h3>
+        </div>
+    </div>
+
+    <!-- board seach area -->
+    <div id="board-search">
+        <div class="container">
+            <div class="search-window">
+                <div class="search-wrap">
+                  <input id="search" type="search" name="" placeholder="한줄평을 적어주세요.(30자 미만)" value="" maxlength="29">
+                  <button class="btn btn-dark">적기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+  <!-- board list area -->
+    <div id="board-list">
+        <div class="container">
+            <table class="board-table">
+                <thead>
+                <tr>
+                    <th scope="col" class="th-num">번호</th>
+                    <th scope="col" class="th-title">제목</th>
+                    <th scope="col" class="th-date">한줄평</th>
+                </tr>
+                </thead>
+                <tbody id="board-list-wrap">
+                  <tr>
+                      <td>3</td>
+                      <th>하루에 조금이라도 공부하기 2일차</th>
+                      <td>2023.04.25</td>
+                  </tr>
+
+                  <tr>
+                      <td>2</td>
+                      <th>하루에 조금이라도 공부하기 1일차</th>
+                      <td>2023.04.24</td>
+                  </tr>
+
+                  <tr>
+                      <td>1</td>
+                      <th>공지사항 안내입니다. 이용해주셔서 감사합니다</th>
+                      <td>2023.04.23</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</section>
+<script src="./js/list.js"></script>
 </body>
 </html>
