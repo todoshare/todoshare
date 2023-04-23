@@ -8,21 +8,24 @@
   <title>Todo & Share</title>
   
 </head>
-<body>
-  <p style="padding: 20px; font-weight: bold; font-size: 20px;" onclick="location.href='/'">메인화면으로</p>
+<body style="background-image: url('/image/4.jpg'); background-size: cover;">
+ 
   <section class="notice">
   <div class="page-title">
         <div class="container">
-            <h3>오늘의 한줄평</h3>
+            <h3 style="font-weight: bold;">오늘의 한줄평</h3>
         </div>
     </div>
 
     <!-- board seach area -->
+   
     <div id="board-search">
+        
         <div class="container">
+            <div onclick="location.href='/'" style="width:90px; font-weight:bold; font-size: 14px; margin-bottom: 10px; text-align: center; border-radius: 5px; padding: 5px 8px; background-color: #d50404; color:white;">홈으로</div>
             <div class="search-window">
                 <div class="search-wrap">
-                  <input id="search" type="search" name="" placeholder="한줄평을 적어주세요.(30자 미만)" value="" maxlength="29">
+                  <input id="search" type="search" name="" placeholder="한줄평을 적어주세요.(30자 미만)" value="s" maxlength="29">
                   <button class="btn btn-dark">적기</button>
                 </div>
             </div>
@@ -30,9 +33,9 @@
     </div>
    
   <!-- board list area -->
-    <div id="board-list">
+    <div id="board-list" style="margin-top:20px;">
         <div class="container">
-            <table class="board-table">
+            <table class="board-table" style="background-color: #fff;">
                 <thead>
                 <tr>
                     <th scope="col" class="th-num">번호</th>

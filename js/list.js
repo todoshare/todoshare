@@ -74,5 +74,15 @@ for(let i = 0; i < cookies.length; i++) {
   }
 }
 
+function randomBackgroundImage () {
+	const imageArray = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"] 
+	const backgroundImage = document.querySelector("body")
+	const imageNumber = Math.floor(Math.random() * imageArray.length)
+
+	backgroundImage.style.backgroundImage = `url(image/${imageArray[imageNumber]})`
+  backgroundImage.style.backgroundSize = 'cover';
+}
+randomBackgroundImage()
+
 
 btn.addEventListener('click', addList)
