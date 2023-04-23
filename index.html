@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vanilla Challenge</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="stylesheet" type="text/css" href="./default.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+    <div class="background-image">
+     
+      <div class="time-container">
+        <div class="name-container">
+          <div class="nav-top name-wrap hidden">
+            <p class="name main-nav-font ellipsis"></p>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center;">
+          <div class="weather_nav mr-20">
+            <p class="location weather-font"></p>
+            <p class="weather weather-font"></p>
+          </div>
+          <div class="time-wrap nav-top mr-20">
+          
+            <p class="time main-nav-font"></p>
+          </div>
+        </div>
+      </div>
+      
+      <form id="login-form" class="hidden">
+        <div class="login-container">
+          <input type="text" placeholder="너의 이름은 뭐야?" required maxlength="30" class="write-name"/>
+          <input type="submit" value="Login" class="login-btn" />
+        </div>
+      </form>
+      <div class="todo-list-wrap hidden">
+        <div class="todo-list-container">
+          <div class="mr-20 todo-list-div">
+          <form id="todo-form">
+            <input class="todo-input" type="text" placeholder="write todo list" required/>
+            <ul id="todo-list"></ul>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/background-image.js"></script>
+    <script src="./js/time.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/todo-list.js"></script>
+    <script src="./js/weather.js"></script>
+    
+  </body>
+</html>
